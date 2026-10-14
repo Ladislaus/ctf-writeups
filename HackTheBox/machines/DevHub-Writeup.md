@@ -233,10 +233,10 @@ root@devhub:~# cat root.txt
 
 **For defenders:**
 
-- **Don't bind development tools to `0.0.0.0`.** MCPJam Inspector's choice of default bind address is what turned a locally-exploitable bug into a remotely-exploitable one.
-- **Service tokens and auth tokens do not belong on a command line.** `ps aux` is readable by any other local user.
+- **Don't bind development tools to `0.0.0.0`.** Exposing the MCPJam Inspector on all network interfaces needlessly expands the attack surface.
+- **Service tokens do not belong on a command line.** `ps aux` is readable by any other local user.
 - **A hardcoded API key is not a secret once the source is readable.** `opsmcp/server.py`'s key was committed in cleartext and could be read by users other than root.
-- **"Admin dump" endpoints that return private keys over HTTP** are a single point of total compromise.
+- **"Admin dump" endpoints** are a single point of total compromise.
 
 **What I learned**
 

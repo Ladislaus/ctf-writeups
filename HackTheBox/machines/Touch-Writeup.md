@@ -294,15 +294,15 @@ cc4a1887...
 
 **For defenders:**
 
-- **Never run database services as SYSTEM.** A dedicated low-privilege service account limits the blast radius of any MySQL-level compromise to the database, not the entire OS.
-- **`File_priv = Y` enables DLL loading.** Remove it from all accounts that do not explicitly require it. It directly enables the UDF attack.
+- **Never run database services as SYSTEM.** A dedicated low-privilege service account limits the any MySQL-level compromise to the database.
+- **`File_priv = Y` enables DLL loading.** It directly enables the UDF attack.
 - **Secrets do not belong in source code or batch files.**
 - **Kiosk escapes via error dialogs.** Error messages that render hyperlinks, combined with a default browser, bypass application-level shell restrictions.
 - **A publicly available serial number was used as the default password.** `/api/status` leaking the device serial number, which should never have been treated as a secret.
 
 **What I learned**
 
-- **MySQL UDF Injection.** This was my first time using this vector.
+- **MySQL UDF Injection.** This was my first time using this attack vector.
 
 **Tools I used**
 

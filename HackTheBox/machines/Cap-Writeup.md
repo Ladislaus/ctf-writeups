@@ -154,10 +154,10 @@ root@cap:~# cat /root/root.txt
 
 **For defenders:**
 
-- **Never use FTP for authenticated sessions.** Use SFTP (SSH file transfer) or FTPS. FTP credentials are readable by any network observer.
+- **Never use FTP for authenticated sessions.** Use SFTP. FTP credentials are readable by any network observer.
 - **IDOR requires authorisation checks on every request.** The web app should verify that the requesting user owns the snapshot ID being accessed.
-- **Separate passwords for separate services.** Credential reuse turns a single compromise into a multi-service compromise.
-- **Understand what each Linux capability grants.** `cap_setuid` is not a "minor" privilege. It is effectively equivalent to unrestricted root access, because it allows calling `setuid(0)`.
+- **Separate passwords for separate services.** Credential reuse reduces the security of all services to the level of the least secure one.
+- **Understand what each Linux capability grants.** `cap_setuid` effectively equivalent to unrestricted root access, because it allows calling `setuid(0)`.
 
 **What I learned**
 
