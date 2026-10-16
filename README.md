@@ -7,3 +7,4 @@
 | [DevHub](./HackTheBox/machines/DevHub-Writeup.md) | Machine (Linux) | Unauthenticated RCE, Privilege Escalation | Medium |
 | [Bumblebee](./HackTheBox/sherlocks/Bumblebee-DFIR-Writeup.md) | Sherlock | DFIR | Easy |
 | [Subatomic](./HackTheBox/sherlocks/Subatomic-Malware-Analysis-Writeup.md) | Sherlock | Malware Analysis | Medium |
+| [Nuts](./HackTheBox/sherlocks/Nuts-DFIR-Writeup.md) | Sherlock | DFIR | Medium |
