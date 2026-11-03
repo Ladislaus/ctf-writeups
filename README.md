@@ -12,7 +12,3 @@
 | [Subatomic](./HackTheBox/sherlocks/Subatomic-Malware-Analysis-Writeup.md) | Sherlock | Malware Analysis | Medium |
 | [Nuts](./HackTheBox/sherlocks/Nuts-DFIR-Writeup.md) | Sherlock | DFIR | Medium |
 
-TODO
-AD https://github.com/seriotonctf/HackTheBox-AD-Machines
-https://app.hackthebox.com/machines/484?sort_by=created_at&sort_type=desc
-https://app.hackthebox.com/machines/936?sort_by=created_at&sort_type=desc
